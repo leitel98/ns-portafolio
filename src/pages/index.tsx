@@ -127,7 +127,7 @@ export default function Home() {
             {/* card 3 */}
             <div className="flex flex-col md:flex-row md:col-span-2 p-12 bg-swampole bg-opacity-50 rounded-md shadow-lg">
               <div className=' relative'>
-                <h1 className="font-rosario font-bold absolute text-white text-lg top-32 left-24">Coming Soon</h1>
+                <h1 className="font-rosario font-bold absolute text-white text-md lg:text-lg top-[45%] left-[35%]">Coming Soon</h1>
                 <Image
                   src={'/comming-soon.png'}
                   alt={''}
@@ -165,7 +165,7 @@ export default function Home() {
                 nsmithb95@gmail.com
               </p>
             </div>
-            <div className="flex flex-row space-x-4">
+            <div className="flex flex-row space-x-4 justify-center">
               <Image
                 src={'/cel.svg'}
                 alt={''}
@@ -177,7 +177,7 @@ export default function Home() {
                 +56 9 8838 3751
               </p>
             </div>
-            <div className="flex flex-row space-x-4">
+            <div className="flex flex-row space-x-4 justify-center">
               <Image
                 src={'/Linkedin.svg'}
                 alt={''}
@@ -185,7 +185,7 @@ export default function Home() {
                 height={100}
                 className=''
               />
-              <p className="font-oxygen text-sm">
+              <p className="font-oxygen text-sm justify-center">
                 /nsmithb
               </p>
             </div>
