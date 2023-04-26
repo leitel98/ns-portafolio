@@ -152,8 +152,8 @@ export default function Home() {
           <h1 className="font-oxygen text-lg md:text-xl">
             Get in contact with me
           </h1>
-          <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-20">
-            <div className="flex flex-row space-x-4">
+          <div className="flex flex-col justify-center items-center space-y-6 md:flex-row md:space-y-0 md:space-x-20">
+            <div className="flex flex-row space-x-4 justify-center items-center">
               <Image
                 src={'/mail.svg'}
                 alt={''}
@@ -165,7 +165,7 @@ export default function Home() {
                 nsmithb95@gmail.com
               </p>
             </div>
-            <div className="flex flex-row space-x-4 justify-center">
+            <div className="flex flex-row space-x-4 justify-center items-center">
               <Image
                 src={'/cel.svg'}
                 alt={''}
@@ -177,9 +177,9 @@ export default function Home() {
                 +56 9 8838 3751
               </p>
             </div>
-            <div className="flex flex-row space-x-4 justify-center">
+            <div className="flex flex-row space-x-4 justify-center items-center">
               <Image
-                src={'/Linkedin.svg'}
+                src={'/linkedin.svg'}
                 alt={''}
                 width={25}
                 height={100}
