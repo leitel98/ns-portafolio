@@ -78,7 +78,7 @@ const Woman = () => {
         </div>
         {/* carousel */}
         <div className='grid grid-cols-3 md:grid-cols-6 mt-16 mb-4 gap-4 mx-4 md:mx-auto'>
-          {images.map(image => <Image src={image} width={175} height={175} alt={''} className='object-cover w-full h-full' />)}
+          {images.map(image => <Image key={image} src={image} width={175} height={175} alt={''} className='object-cover w-full h-full' />)}
         </div>
       </section>
 
@@ -148,7 +148,7 @@ const Woman = () => {
               <div className="h-5 w-5 bg-pinkole rounded-full" />
             </div>
             <div className="absolute w-full h-1 bg-pinkole top-2 " />
-            
+
           </div>
         </div>
 
