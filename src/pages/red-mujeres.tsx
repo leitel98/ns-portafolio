@@ -45,7 +45,7 @@ const Woman = () => {
           </p>
         </div>
         {/* specs */}
-        <div className="flex md:flex-col flex-row mt-10 justify-evenly md:space-y-8 md:space-x-0 w-full md:w-1/3 ">
+        <div className="flex md:flex-col flex-row mt-10 justify-around md:space-y-8 md:space-x-0 w-full md:w-1/3 ">
           <div className="flex flex-col space-y-2">
             <h1 className="text-xs text-left uppercase font-bold">
               My role
@@ -76,31 +76,35 @@ const Woman = () => {
         </div>
       </div>
       {/* carousel */}
-      <div className="lg:w-3/4 mx-auto my-12 px-4">
-        <div className="flex flex-row space-x-2">
-        <Image
-          src={'/whitearrow.svg'}
-          alt={''}
-          width={25}
-          height={25}
-          className=''
-        />
-        <Carousel loop>
-          {images.map((src, i) => {
-            return (
-              <div className="relative flex-[0_0_100%]" key={i}>
-                <Image src={src} width={250} height={225} className="mx-auto h-[30rem]" alt="alt" />
-              </div>
-            );
-          })}
-        </Carousel>
-        <Image
-          src={'/whitearrow.svg'}
-          alt={''}
-          width={25}
-          height={25}
-          className='rotate-180'
-        />
+      <div className="mx-auto my-12 px-4">
+        <div className="flex flex-row space-x-4 scroll-smooth">
+          <Image
+            src={'/whitearrow.svg'}
+            alt={''}
+            width={25}
+            height={25}
+            className=''
+          />
+          <Carousel loop slidesToShow={3}>
+            {images.map((src, i) => (
+              <Image
+                src={src}
+                width={250}
+                height={225}
+                className="mx-4 h-[30rem]"
+                alt="alt"
+                key={i}
+              />
+            ))}
+          </Carousel>
+
+          <Image
+            src={'/whitearrow.svg'}
+            alt={''}
+            width={25}
+            height={25}
+            className='rotate-180'
+          />
         </div>
       </div>
     </section>
