@@ -15,7 +15,7 @@ const Woman = () => {
   ]
 
   return (
-    <section id="hero-red" className='py-10 px-6 md:px-16 pink-gradient text-white'>
+    <section id="hero-red" className='py-10 md:px-16 pink-gradient text-white'>
       <Link href={'/'}>
         <Image
           src={'/whitearrow.svg'}
@@ -51,7 +51,10 @@ const Woman = () => {
               My role
             </h1>
             <p className="text-xxs text-left">
-              Sole UX/UI Designer
+              Sole UX/UI
+            </p>
+            <p className="text-xxs text-left">
+              Designer
             </p>
           </div>
           <div className="flex flex-col space-y-2">
@@ -73,13 +76,13 @@ const Woman = () => {
         </div>
       </div>
       {/* carousel */}
-      <div className="lg:w-3/4 mx-auto my-12">
+      <div className="lg:w-3/4 mx-auto my-12 px-4">
         <div className="flex flex-row space-x-2">
         <Image
           src={'/whitearrow.svg'}
           alt={''}
-          width={50}
-          height={50}
+          width={25}
+          height={25}
           className=''
         />
         <Carousel loop>
@@ -94,8 +97,8 @@ const Woman = () => {
         <Image
           src={'/whitearrow.svg'}
           alt={''}
-          width={50}
-          height={50}
+          width={25}
+          height={25}
           className='rotate-180'
         />
         </div>
