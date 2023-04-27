@@ -148,6 +148,7 @@ const Woman = () => {
               <div className="h-5 w-5 bg-pinkole rounded-full" />
             </div>
             <div className="absolute w-full h-1 bg-pinkole top-2 " />
+            
           </div>
         </div>
 
