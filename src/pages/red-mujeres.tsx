@@ -40,7 +40,7 @@ const Woman = () => {
           <h1 className="font-rosario font-bold text-center md:text-left text-sm md:text-sm uppercase">
             Overview
           </h1>
-          <p className="text-sm text-justify md:text-left md:max-w-3xl">
+          <p className="text-sm text-justify px-4 md:px-0 md:text-left md:max-w-3xl">
             As part of an intense 3 month UX/UI course by Codehouse, we worked on creating an app from scratch. The first requirement was to find a subject that you were passionate about. This drove me to work on a social network just for women, with its main purpose being sharing, supporting and taking care of each other.
           </p>
         </div>
