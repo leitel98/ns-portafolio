@@ -76,37 +76,21 @@ const Woman = () => {
         </div>
       </div>
       {/* carousel */}
-      <div className="mx-auto my-12 px-4">
-        <div className="flex flex-row space-x-4 scroll-smooth">
-          <Image
-            src={'/whitearrow.svg'}
-            alt={''}
-            width={25}
-            height={25}
-            className=''
-          />
+        <div className="flex flex-row mx-auto my-12 xl:my-20">
           <Carousel loop slidesToShow={3}>
             {images.map((src, i) => (
               <Image
                 src={src}
                 width={250}
                 height={225}
-                className="mx-4 h-[30rem]"
+                className="mx-6 xl:mx-36 xl:scale-125"
                 alt="alt"
                 key={i}
               />
             ))}
           </Carousel>
-
-          <Image
-            src={'/whitearrow.svg'}
-            alt={''}
-            width={25}
-            height={25}
-            className='rotate-180'
-          />
         </div>
-      </div>
+
     </section>
   )
 }

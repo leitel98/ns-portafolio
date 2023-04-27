@@ -14,7 +14,7 @@ const Carousel = ({ children, slidesToShow = 1, ...options }: PropsWithChildren<
   const [emblaRef] = useEmblaCarousel(emblaOptions);
 
   return (
-    <div className="overflow-hidden" ref={emblaRef}>
+    <div className="" ref={emblaRef}>
       <div className="flex">{children}</div>
     </div>
   );
