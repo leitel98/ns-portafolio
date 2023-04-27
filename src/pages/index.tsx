@@ -35,23 +35,23 @@ export default function Home() {
           </h1>
           <div className=" grid gap-10 grid-cols-1 md:grid-cols-2 text-blackole">
             {/* card 1 */}
-            <div className="flex flex-col relative pt-8 px-6 pb-6 bg-pinkole bg-opacity-50 rounded-md shadow-lg">
+            <div className="flex flex-col relative pt-8 pl-5 pr-4 pb-6 bg-pinkole bg-opacity-50 rounded-md shadow-lg">
               <Image
-                src={'/woman-1.png'}
+                src={'/womancel.png'}
                 alt={''}
                 width={500}
                 height={100}
                 className='w-full'
               />
               <div className='px-6'>
-                <h1 className="mt-10 font-rosario text-md md:text-lg uppercase">
+                <h1 className="-mt-4 font-rosario text-md md:text-lg uppercase">
                   red mujeres
                 </h1>
                 <p className="text-sm md:text-md mt-4">
                   UX/UI design of a social network app just for women.
                 </p>
               </div>
-              <div className="w-full flex flex-row justify-end space-x-4 mt-6">
+              <div className="w-full mr-6 flex flex-row justify-end space-x-4 mt-6">
                 <p className="text-sm">Case study</p>
                 <Image
                   src={'/arrow.svg'}
