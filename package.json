@@ -12,8 +12,12 @@
     "@types/node": "18.16.0",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
+    "classnames": "^2.3.2",
+    "embla-carousel-react": "^8.0.0-rc01",
+    "flowbite": "^1.6.5",
     "next": "13.3.1",
     "react": "18.2.0",
+    "react-alice-carousel": "^2.7.1",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
   },

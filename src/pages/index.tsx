@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -44,23 +45,24 @@ export default function Home() {
                 className='w-full'
               />
               <div className='px-6'>
-                <h1 className="-mt-4 font-rosario text-md md:text-lg uppercase">
+                <h1 className="-mt-2 md:-mt-4 font-rosario text-md md:text-lg uppercase">
                   red mujeres
                 </h1>
                 <p className="text-sm md:text-md mt-4">
                   UX/UI design of a social network app just for women.
                 </p>
               </div>
-              <div className="w-full mr-6 flex flex-row justify-end space-x-4 mt-6">
-                <p className="text-sm">Case study</p>
+              <Link className="text-sm max-w-xl mt-4 text-end" href={'/red-mujeres'}
+              >
+                Case study
                 <Image
                   src={'/arrow.svg'}
                   alt={''}
                   width={25}
                   height={100}
-                  className=''
+                  className='inline-block mx-4'
                 />
-              </div>
+              </Link>
             </div>
             {/* card 2  */}
             <div className="flex flex-col pt-8 px-6 pb-6 bg-cream bg-opacity-50 rounded-md shadow-lg">
