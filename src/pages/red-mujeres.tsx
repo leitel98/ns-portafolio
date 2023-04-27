@@ -77,15 +77,80 @@ const Woman = () => {
           </div>
         </div>
         {/* carousel */}
-        <div className='flex flex-row mt-16 mb-4 space-x-4 w-fill'>
-          {images.map(image => <Image src={image} width={175} height={175} alt={''} className='flex-1' />)}
+        <div className='grid grid-cols-3 md:grid-cols-6 mt-16 mb-4 gap-4 mx-4 md:mx-auto'>
+          {images.map(image => <Image src={image} width={175} height={175} alt={''} className='object-cover w-full h-full' />)}
         </div>
       </section>
 
       <section id="info" className="py-52 px-36 bg-center bg-no-repeat" style={{ backgroundImage: "url('/1-in-3.png')" }}>
         <p className="text-sm text-black">
-        Did you know that one in three women suffers some kind of abuse? And that only 40% of them seek help? Mainly from friends or family. What if we could expand this circle so that our support network was bigger? Red Mujeres is a social network that aims to achieve this. The idea is to create a space where everyone can share their experiences, raise their voices on different topics and take care of each other. Through communication and mutual support we are stronger against a world that is not usually on our side.
+          Did you know that one in three women suffers some kind of abuse? And that only 40% of them seek help? Mainly from friends or family. What if we could expand this circle so that our support network was bigger? Red Mujeres is a social network that aims to achieve this. The idea is to create a space where everyone can share their experiences, raise their voices on different topics and take care of each other. Through communication and mutual support we are stronger against a world that is not usually on our side.
         </p>
+      </section>
+
+      <section id="problem" className="pt-20 pb-48 px-16 relative bg-cream bg-opacity-50 text-black flex flex-col space-y-28">
+        {/* problem */}
+        <div className="flex flex-col space-y-6">
+          {/* title */}
+          <div className="flex flex-row space-x-6 items-center">
+            <div className="flex flex-col space-y-0 items-center">
+              <div className="rounded-full h-4 w-4 bg-black" />
+              <div className="absolute w-1 h-[29em] md:h-[22em] xl:h-80 bg-black" />
+            </div>
+            <h1 className="font-rosario text-md md:text-lg">
+              The Problem
+            </h1>
+          </div>
+          {/* paragraph */}
+          <p className="mx-4 pl-12 text-sm max-w-4xl xl:max-w-6xl">
+            In Latin America and the world there are still many cases of violence against women, in most cases by family members or acquaintances. Less than 40% of the victims seek some kind of help and less than 10% go to the police, generating a huge deficit of information in this regard.
+          </p>
+        </div>
+
+        {/* <div className="absolute w-1 h-96 bg-black" /> */}
+
+        {/* solution */}
+        <div className="flex flex-col space-y-6">
+          {/* title */}
+          <div className="flex flex-row space-x-6 items-center">
+            <div className="rounded-full h-4 w-4 bg-black"></div>
+            <h1 className="font-rosario text-md md:text-lg">
+              The Solution
+            </h1>
+          </div>
+          {/* paragraph */}
+          <p className="mx-4 pl-12 text-sm max-w-4xl xl:max-w-6xl">
+            To create a line of communication between women. In this social network the community can share information on personal experiences, things that make them uneasy, men that make them uncomfortable and find other women with similar stories. This in order to find the support that is not always available, create a safe space to speak out and eventually prevent future abuse by identifying the people around you who have previously been accused of it.
+          </p>
+        </div>
+      </section>
+
+      <section id="research" className="py-48 px-20 relative">
+        <Image
+          src={'/phones.png'}
+          alt={''}
+          width={550}
+          height={550}
+          className='absolute right-8 -top-44'
+        />
+
+        <h1 className="font-oxygen font-bold text-xl uppercase text-center mb-28">
+          ux Research
+        </h1>
+        <div className="hidden md:block px-8">
+          <div className="relative mx-auto">
+            <div className="flex flex-row items-center justify-between">
+              <div className="h-5 w-5 bg-pinkole rounded-full" />
+              <div className="h-5 w-5 bg-pinkole rounded-full left" />
+              <div className="h-5 w-5 bg-pinkole rounded-full" />
+              <div className="h-5 w-5 bg-pinkole rounded-full" />
+              <div className="h-5 w-5 bg-pinkole rounded-full" />
+              <div className="h-5 w-5 bg-pinkole rounded-full" />
+            </div>
+            <div className="absolute w-full h-1 bg-pinkole top-2 " />
+          </div>
+        </div>
+
       </section>
     </>
   )
