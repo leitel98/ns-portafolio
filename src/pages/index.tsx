@@ -10,8 +10,8 @@ export default function Home() {
       </Head>
       <main className='flex-flex-col tracking-normal'>
         <section id='#hero' className="flex flex-col">
-          <div className="flex flex-col md:flex-row pt-32 pb-36 px-20 justify-between">
-            <h1 className="font-oxygen text-lg md:text-xl text-blackole max-w-lg md:w-1/2">Hi ! I’m <span className='inline-block text-pinkole'>Nicole</span>, UX/UI Designer, Problem solver, Artist and Crazy cat lady.</h1>
+          <div className="flex flex-col md:flex-row pt-20 md:pt-32 pb-36 md:pl-28 justify-between">
+            <h1 className="font-oxygen text-lg text-center md:text-left md:text-xl mx-auto text-blackole max-w-xl md:w-1/2">Hi ! I’m <span className='inline-block text-pinkole'>Nicole</span>, UX/UI Designer, Problem solver, Artist and Crazy cat lady.</h1>
             <Image
               src={'/work-from-home.gif'}
               alt={''}
