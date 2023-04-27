@@ -22,10 +22,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="flex flex-col px-20 py-24 space-y-12 bg-cream bg-opacity-50 text-blackole">
+        <section id="about" className="flex flex-col px-10 md:px-20 py-24 space-y-12 bg-cream bg-opacity-50 text-blackole">
           <h1 className="text-xl md:text-2xl font-oxygen md:text-center">This is Me!</h1>
-          <p className="text-sm md:max-w-8xl md:text-center md:mx-auto">
-            <span className="text-sm font-bold ">I am</span> a UX/UI designer, an artist and a natural problem solver. With a background in culinary arts and services, <span className="text-sm font-bold">I pride myself</span> in my ability to work as part of a  team with colleagues from diverse backgrounds. This has helped me develop an ease at sharing my ideas in a quick and simple way, in order to maintain a dynamic and synchronized work environment. <span className="text-sm font-bold">I believe</span> active listening is the first step to problem solving and effective communication. How can you find a solution if you don’t understand the problem? Ask the right questions, add some creativity and teamwork and you can deliver results that will make a lasting impact on people.
+          <p className="text-sm md:max-w-8xl md:text-center md:mx-auto text-justify">
+            <span className="text-sm font-bold">I am</span> a UX/UI designer, an artist and a natural problem solver. With a background in culinary arts and services, <span className="text-sm font-bold">I pride myself</span> in my ability to work as part of a  team with colleagues from diverse backgrounds. This has helped me develop an ease at sharing my ideas in a quick and simple way, in order to maintain a dynamic and synchronized work environment. <span className="text-sm font-bold">I believe</span> active listening is the first step to problem solving and effective communication. How can you find a solution if you don’t understand the problem? Ask the right questions, add some creativity and teamwork and you can deliver results that will make a lasting impact on people.
           </p>
         </section>
 
