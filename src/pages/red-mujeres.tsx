@@ -88,7 +88,7 @@ const Woman = () => {
         </p>
       </section>
 
-      <section id="problem" className="pt-20 pb-48 px-16 relative bg-cream bg-opacity-50 text-black flex flex-col space-y-28">
+      <section id="problem" className="pt-20 pb-48 px-8 md:px-20 relative bg-cream bg-opacity-50 text-black flex flex-col space-y-28">
         {/* problem */}
         <div className="flex flex-col space-y-6">
           {/* title */}
@@ -125,7 +125,7 @@ const Woman = () => {
         </div>
       </section>
 
-      <section id="research" className="py-48 px-20 relative">
+      <section id="research" className="py-48 px-8 md:px-20 relative">
         <Image
           src={'/phones.png'}
           alt={''}
