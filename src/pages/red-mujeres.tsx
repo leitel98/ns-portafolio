@@ -125,7 +125,7 @@ const Woman = () => {
         </div>
       </section>
 
-      <section id="research" className="py-48 px-8 md:px-20 relative">
+      <section id="research" className="py-40 px-8 md:px-20 relative">
         <Image
           src={'/phones.png'}
           alt={''}
@@ -134,7 +134,7 @@ const Woman = () => {
           className='absolute right-8 -top-44'
         />
 
-        <h1 className="font-oxygen font-bold text-xl uppercase text-center mb-16 md:mb-24">
+        <h1 className="font-oxygen font-bold text-lg md:text-xl uppercase text-center mb-16 md:mb-24">
           ux Research
         </h1>
         <div className="hidden md:block px-8 mb-10">
@@ -182,14 +182,14 @@ const Woman = () => {
           <h1>Iteration</h1>
         </div>
 
-        <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-60 md:px-8 mb-16 md:mb-24">
+        <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:justify-between md:space-x-8 md:px-8 mb-16 md:mb-24">
           <div className="flex flex-row space-x-4 justify-center md:items-start">
             <div className='h-4 w-4 rounded-full bg-pinkole mt-4' />
             <h1 className="font-oxygen font-bold text-sm md:text-md uppercase">
               Inspiration
             </h1>
           </div>
-          <p className="text-xs md:text-sm text-justify">
+          <p className="text-xs md:text-sm text-justify md:max-w-lg">
             For the first part of the investigation I focused on the viability of the idea. Could it help? Would women use it? Would they feel safe sharing their stories online? Getting those answers through research and interviews. After this I benchmarked possible competitors to understand what they did properly and what i could improve through my design.
           </p>
         </div>
@@ -200,7 +200,7 @@ const Woman = () => {
         </div>
         {/* podcast */}
         <div className="flex flex-col md:flex-row space-y-12 md:space-y-0 md:space-x-10">
-          <Link 
+          <Link
             href={'https://open.spotify.com/episode/5qovZgEaFe58ux64M2u7hu?si=07960ec46ccd4c7e'}
             className='w-full flex justify-center'>
             <Image
@@ -219,6 +219,77 @@ const Woman = () => {
             <p className="text-sm text-justify max-w-7xl xl:max-w-full">
               This is one clip from a podcast that is full of real life examples of how women have worked together to stand up against an abuser. Once they started talking to each other, putting the pieces together and going public, they realized the extent of the damage this person caused. Other women managed to get away from this man on time thanks to their stories. It also helped to gather enough evidence and proof to try and get him arrested. This case is still on going.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="question-band" className="py-8 px-4 md:px-20 bg-pinkole text-white text-md md:text-lg">
+        <h1 className="mx-auto text-center">
+          So what if we could build a place were we could safely have these conversations?
+        </h1>
+      </section>
+
+      <section id="interviews" className="py-12 md:py-28 px-4 md:px-16 text-black flex flex-col space-y-16">
+        {/* header */}
+        <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:justify-between md:px-8">
+          <h1 className="font-rosario font-bold text-md text-center md:items-start">Interviews</h1>
+          <p className="text-sm text-justify md:w-1/2">
+            I conducted five remote user interviews to get to know my users, their frustrations, motivations, what they do and how they feel. With this information I created an empathy map in order to better guide the creation of my user persona and overall project. Some of the most important answers are shown next.
+          </p>
+        </div>
+        {/* interviews */}
+        <div className="flex flex-col px-8 space-y-16 md:space-y-16">
+          {/* chat left */}
+          <div className="flex flex-row relative">
+            <Image
+              src={'/int-1.png'}
+              alt={''}
+              width={100}
+              height={100}
+              className='rounded-full absolute top-48 md:top-28'
+            />
+            <p className="p-8 bg-chat-left bg-pinkole bg-opacity-70 text-xs md:text-sm md:max-w-2xl ml-28 text-justify shadow-xl">
+              “There is a special bond between women, we share similar experiences just because of it”.
+            </p>
+          </div>
+          {/* chat right */}
+          <div className="flex flex-row relative justify-end">
+            <p className="p-8 bg-chat-right bg-swampole bg-opacity-70 text-xs md:text-sm md:max-w-2xl mr-28 text-justify shadow-xl">
+              “It’s very different to explain some experiences  to men. With women it feels like they understand and believe you”.
+            </p>
+            <Image
+              src={'/int-2.png'}
+              alt={''}
+              width={100}
+              height={100}
+              className='rounded-full absolute top-48 md:top-28 right-0'
+            />
+          </div>
+          {/* chat left */}
+          <div className="flex flex-row relative">
+            <Image
+              src={'/int-3.png'}
+              alt={''}
+              width={100}
+              height={100}
+              className='rounded-full absolute top-48 md:top-24'
+            />
+            <p className="p-8 bg-chat-left bg-pinkole bg-opacity-70 text-xs md:text-sm md:max-w-2xl ml-28 text-justify shadow-xl">
+              “Now a days we mostly use Instagram, Tik Tok and other apps to express our feelings and share with our friends”.
+            </p>
+          </div>
+          {/* chat right */}
+          <div className="flex flex-row relative justify-end">
+            <p className="p-8 bg-chat-right bg-swampole bg-opacity-70 text-xs md:text-sm md:max-w-2xl mr-28 text-justify shadow-xl">
+              “It becomes so frustrating when people don’t listen, invalidate your opinions, question everything you say and in general make you feel insecure. And this usually comes from men”.
+            </p>
+            <Image
+              src={'/int-4.png'}
+              alt={''}
+              width={100}
+              height={100}
+              className='rounded-full absolute top-48 md:top-28 right-0'
+            />
           </div>
         </div>
       </section>
