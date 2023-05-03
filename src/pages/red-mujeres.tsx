@@ -223,7 +223,7 @@ const Woman = () => {
         </div>
       </section>
 
-      <section id="question-band" className="py-8 px-4 md:px-20 bg-pinkole text-white text-md md:text-lg">
+      <section id="question-band" className="py-8 px-4 md:px-32 bg-pinkole text-white text-md md:text-lg">
         <h1 className="mx-auto text-center">
           So what if we could build a place were we could safely have these conversations?
         </h1>
