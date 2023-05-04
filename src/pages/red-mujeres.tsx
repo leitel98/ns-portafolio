@@ -294,7 +294,10 @@ const Woman = () => {
         </div>
       </section>
 
-      <section id="benchmarking" className="pt-10 pb-16 px-8 bg-lightCream text-black flex flex-col space-y-16">
+      <section id="benchmarking" className="pt-0 pb-16 px-8 bg-lightCream text-black flex flex-col space-y-16 relative">
+        <div className="absolute blurball bg-white right-80 top-8" />
+        <div className="absolute blurball bg-pinkole right-0 top-96" />
+        <div className="absolute blurball bg-pinkole left-0 top-96 scale-75" />
         <h1 className="font-rosario font-bold text-md md:text-[36px] ml-40">
           Benchmarking: <span className='font-rosario font-normal'> What do we have available now?</span>
         </h1>
@@ -443,7 +446,7 @@ const Woman = () => {
       </section>
 
       <section id="user" className="px-8 py-8 md:px-12 md:py-16 bg-pinkole text-white bg-opacity-[85%]">
-        <div className="flex flex-col space-y-8 justify-center items-center md:flex-row md:space-y-0 md:space-x-20">
+        <div className="flex flex-col space-y-8 justify-center items-center md:flex-row md:space-y-0 md:space-x-28">
           <Image
             src={'/user.png'}
             alt={''}
@@ -495,6 +498,111 @@ const Woman = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* mvp */}
+      <section id="mvp" className="py-8 px-6 md:px-32 md:pt-4 md:pb-28 relative flex flex-col space-y-28 items-start">
+        <div className="absolute blurball bg-pinkole top-24 right-80"/>
+        <div className="absolute blurball bg-cream bottom-24 right-48 scale-125"/>
+        <Image 
+          className="hidden md:block absolute right-28 top-40" 
+          src={'/duphones.png'} 
+          alt={''}
+          width={450}
+          height={100}
+        />
+        <div className="flex flex-col space-y-8">
+          <h2 className="font-rosario font-bold text-md md:text-lg text-center">
+            MVP
+          </h2>
+          <h1 className="font-bold text-xs md:text-sm">
+            The basic functions for the app to serve its purpose are:
+          </h1>
+          <ul className="flex flex-col space-y-1 pl-4">
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                To be able to register and verify that you are a woman.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Make a post with an image and/or text.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Interact with the community through chats and comments.
+              </p>
+            </div>
+          </ul>
+        </div>
+        <div className="flex flex-col space-y-8">
+          <h2 className="font-rosario font-bold text-md md:text-lg text-center">
+            Full version
+          </h2>
+          <h1 className="font-bold text-xs md:text-sm">
+            In future updates the objective is to add these features:
+          </h1>
+          <ul className="flex flex-col space-y-1 pl-4">
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                To have colors that indicate the category of posts.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Being able to publish anonymously.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Adding your location to your post.
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Saving posts and assort them into folders
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Trigger warnings for posts
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Adding friends to your circle
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Answer posts with other posts in order to have chain reactions
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Search filters and recommendations
+              </p>
+            </div>
+            <div className="flex flex-row space-x-2 items-center">
+              <div className="h-1 w-1 rounded-full bg-black" />
+              <p className="text-xxs md:text-xs">
+                Moderators and the possibility to report posts that go against the community
+              </p>
+            </div>
+          </ul>
+        </div>
+
       </section>
     </>
   )
