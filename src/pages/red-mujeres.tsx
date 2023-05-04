@@ -229,7 +229,7 @@ const Woman = () => {
         </h1>
       </section>
 
-      <section id="interviews" className="py-12 md:py-28 px-4 md:px-16 text-black flex flex-col space-y-16">
+      <section id="interviews" className="py-40 md:py-28 px-4 md:px-16 text-black flex flex-col space-y-16">
         {/* header */}
         <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:justify-between md:px-8">
           <h1 className="font-rosario font-bold text-md text-center md:items-start">Interviews</h1>
@@ -238,7 +238,7 @@ const Woman = () => {
           </p>
         </div>
         {/* interviews */}
-        <div className="flex flex-col px-8 space-y-16 md:space-y-16">
+        <div className="flex flex-col px-8 space-y-40 md:space-y-16">
           {/* chat left */}
           <div className="flex flex-row relative">
             <Image
@@ -272,7 +272,7 @@ const Woman = () => {
               alt={''}
               width={100}
               height={100}
-              className='rounded-full absolute top-48 md:top-24'
+              className='rounded-full absolute top-40 md:top-32'
             />
             <p className="p-8 bg-chat-left bg-pinkole bg-opacity-70 text-xs md:text-sm md:max-w-2xl ml-28 text-justify shadow-xl">
               “Now a days we mostly use Instagram, Tik Tok and other apps to express our feelings and share with our friends”.
@@ -288,8 +288,211 @@ const Woman = () => {
               alt={''}
               width={100}
               height={100}
-              className='rounded-full absolute top-48 md:top-28 right-0'
+              className='rounded-full absolute top-60 md:top-48 right-0'
             />
+          </div>
+        </div>
+      </section>
+
+      <section id="benchmarking" className="pt-10 pb-16 px-8 bg-lightCream text-black flex flex-col space-y-16">
+        <h1 className="font-rosario font-bold text-md md:text-[36px] ml-40">
+          Benchmarking: <span className='font-rosario font-normal'> What do we have available now?</span>
+        </h1>
+        {/* white box */}
+        <div className="pt-12 pb-10 px-6 md:px-32 bg-white bg-opacity-60 relative flex flex-col shadow-xl">
+          {/* dot */}
+          <div className="hidden md:block absolute h-4 w-4 bg-black rounded-full top-32 left-12" />
+          {/* line */}
+          <div className="hidden md:block absolute h-[31rem] z-10 w-1 bg-black rounded-full top-[8.2rem] left-[3.4rem]" />
+          {/* head */}
+          <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row justify-between items-center md:space-x-8 mb-16">
+            <Image
+              src={'/contigo.png'}
+              alt={''}
+              width={250}
+              height={100}
+              className=''
+            />
+            <p className="text-xs md:text-sm max-w-2xl">
+              The main idea is to share your location with close contacts and put out alerts for the other women in your area.
+            </p>
+          </div>
+          {/* strengths and weaknesses */}
+          <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-between md:space-x-24 px-10">
+            {/* str */}
+            <div className="flex flex-col space-y-4">
+              <h1 className="text-sm font-bold">
+                Strengths
+              </h1>
+              <ul className='text-xs px-2 flex flex-col space-y-1 max-w-md items-start'>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-1 w-1 bg-black rounded-full" />
+                  <p>Easy verifying process that you are a woman.</p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-between">
+                  <div className="h-1 w-1 bg-black rounded-full" />
+                  <p>It’s simple and quick to put out an alert, with each category being intuitively depicted by an icon. </p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-1 w-1 bg-black rounded-full" />
+                  <p>The design is clean and visually attractive.</p>
+                </div>
+              </ul>
+            </div>
+            {/* wk */}
+            <div className="flex flex-col space-y-4">
+              <h1 className="text-sm font-bold">
+                Weaknesses
+              </h1>
+              <ul className='text-xs px-2 flex flex-col space-y-1 max-w-md items-start'>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-[4px] w-[4px] bg-black rounded-full" />
+                  <p>There are some extra functions that are not very clear to use.</p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-[4px] w-[4px] bg-black rounded-full" />
+                  <p>The line of communication is limited to your contacts or women in the immediate area. </p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-[4px] w-[4px] bg-black rounded-full" />
+                  <p> The information that is being shared is not saved.</p>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* white box 2 */}
+        <div className="pt-12 pb-10 px-6 md:px-32 bg-white bg-opacity-60 relative flex flex-col shadow-xl">
+          {/* dot */}
+          <div className="hidden md:block absolute h-4 w-4 bg-black rounded-full top-20 left-12" />
+          {/* head */}
+          <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row justify-between items-center md:space-x-8 mb-16">
+            <Image
+              src={'/ig.png'}
+              alt={''}
+              width={250}
+              height={100}
+              className=''
+            />
+            <p className="text-xs md:text-sm max-w-2xl">
+              Wildly known and used. It’s a social media platform that specializes in sharing pictures with your followers.
+            </p>
+          </div>
+          {/* strengths and weaknesses */}
+          <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-between md:space-x-24 px-10">
+            {/* str */}
+            <div className="flex flex-col space-y-4">
+              <h1 className="text-sm font-bold">
+                Strengths
+              </h1>
+              <ul className='text-xs px-2 flex flex-col space-y-1 max-w-md items-start'>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-1 w-1 bg-black rounded-full" />
+                  <p>Very well known and commonly used in day to day life.</p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-between">
+                  <div className="h-1 w-1 bg-black rounded-full" />
+                  <p>Highly intuitive design.</p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-1 w-1 bg-black rounded-full" />
+                  <p> It grabs and keeps your attention through images.</p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-1 w-1 bg-black rounded-full" />
+                  <p> It’s easy to find, add and chat with different people.</p>
+                </div>
+              </ul>
+            </div>
+            {/* wk */}
+            <div className="flex flex-col space-y-4">
+              <h1 className="text-sm font-bold">
+                Weaknesses
+              </h1>
+              <ul className='text-xs px-2 flex flex-col space-y-1 max-w-md items-start'>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-[4px] w-[4px] bg-black rounded-full" />
+                  <p>The size and importance of the text is very small.</p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-[4px] w-[4px] bg-black rounded-full" />
+                  <p>The “Like” and “Follow” functions create competition between users and has been known to affect mental health in young people. </p>
+                </div>
+                <div className="flex flex-row space-x-4 items-center justify-center">
+                  <div className="h-[4px] w-[4px] bg-black rounded-full" />
+                  <p> The amount and variety of people that use it make it easier to encounter bad intentioned people.</p>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="conceptualization" className="py-20 md:pt-40 pb-32 px-8 md:px-32">
+        <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-28 justify-center">
+          <div className="flex flex-row space-x-4 items-start">
+            <div className="w-4 h-4 mt-4 rounded-full bg-pinkole" />
+            <h1 className="font-oxygen font-bold text-sm md:text-md uppercase">
+              conceptualization
+            </h1>
+          </div>
+          <p className="text-xs md:text-sm max-w-xl">
+            With the information recovered by the inspiration phase, I was able to create a user persona and define the MVP of this project.
+          </p>
+        </div>
+      </section>
+
+      <section id="user" className="px-8 py-8 md:px-12 md:py-16 bg-pinkole text-white bg-opacity-[85%]">
+        <div className="flex flex-col space-y-8 justify-center items-center md:flex-row md:space-y-0 md:space-x-20">
+          <Image
+            src={'/user.png'}
+            alt={''}
+            width={300}
+            height={300}
+            className='rounded-full border border-white'
+          />
+          <div className="flex flex-col space-y-16 justify-center">
+            <h1 className="font-rosario font-bold text-sm md:text-md ml-8">
+              User Persona
+            </h1>
+            <div className="flex flex-col space-y-12 justify-center items-left">
+              <div className="flex flex-row space-x-8 items-center">
+                <Image
+                  src={'/person.svg'}
+                  alt={''}
+                  width={30}
+                  height={30}
+                  className=''
+                />
+                <p className="text-xs md:text-sm">
+                  <span className="font-bold"> Camila</span> is a 28 y/o living in Santiago, Chile.
+                </p>
+              </div>
+              <div className="flex flex-row space-x-8 items-center">
+                <Image
+                  src={'/case.svg'}
+                  alt={''}
+                  width={30}
+                  height={30}
+                  className=''
+                />
+                <p className="text-xs md:text-sm max-w-xl">
+                  Working as an mining engineer, she has to deal with men’s ideas of her in a day to day basis. Some women have been incorporating to her team, but there is still a long way to go in order to feel comfortable.
+                </p>
+              </div>
+              <div className="flex flex-row space-x-8 items-center">
+                <Image
+                  src={'/media.svg'}
+                  alt={''}
+                  width={30}
+                  height={30}
+                  className=''
+                />
+                <p className="text-xs md:text-sm max-w-xl">
+                  As her job requires a lot of traveling, she uses a lot of social media to kill time. Some of these are Instagram, Tik Tok, Twitter and Reddit.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
