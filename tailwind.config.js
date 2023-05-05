@@ -29,7 +29,8 @@ module.exports = {
         lightPinkole: "#FBE6E7",
         pinkole: "#EF959D",
         blackole: "#2C2226",
-        swampole: "#B3D0B4"
+        swampole: "#B3D0B4",
+        mintole: "#A3C6A5"
       },
       spacing: {
         '98': '25em',
